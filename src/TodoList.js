@@ -23,7 +23,7 @@ class TodoList extends Component{
                 <ul>
                     {this.state.list.map( (ele,index) => {
                         return(
-                            <TodoItem content={ele} index={index} del={this.handDelClick.bind(this)}/>
+                            <TodoItem content={ele} index={index} del={this.handDelClick.bind(this)} key= {index}/>
                             // <li key = {index} onClick={this.handDelClick.bind(this,index)}>{ele}</li>  
                         )
                     })}
